@@ -1,0 +1,39 @@
+{
+  "name": "sha1-from-file",
+  "version": "1.0.0",
+  "description": "generate a short sha1 hash from a file's contents",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodeunit test.js",
+    "tdd": "nodemon *.js --exec nodeunit test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bcherny/sha1-from-file.git"
+  },
+  "keywords": [
+    "sha1",
+    "hash",
+    "file",
+    "contents",
+    "md5",
+    "7",
+    "digit",
+    "digest",
+    "short",
+    "checksum"
+  ],
+  "author": "Boris Cherny <boris@performancejs.com>",
+  "license": "CC-BY-4.0",
+  "bugs": {
+    "url": "https://github.com/bcherny/sha1-from-file/issues"
+  },
+  "homepage": "https://github.com/bcherny/sha1-from-file#readme",
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.8.0",
+    "nodeunit": "^0.9.1"
+  }
+}
