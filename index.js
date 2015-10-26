@@ -23,7 +23,7 @@ module.exports = function sha1FromFile (s) {
 
 }
 
-// (b: buffer|string) => String
+// (b: Buffer|String) => String
 // @throws AssertionError
 module.exports.sync = function sha1FromFileSync (b) {
 
