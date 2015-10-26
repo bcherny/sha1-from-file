@@ -1,6 +1,6 @@
 {
   "name": "sha1-from-file",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "generate a short sha1 hash from a file's contents",
   "main": "index.js",
   "scripts": {

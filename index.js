@@ -5,7 +5,7 @@ const crypto = require('crypto')
 const stream = require('stream')
 
 // (s: Stream) => Promise[String]
-// @throws TypeError
+// @throws AssertionError
 module.exports = function sha1FromFile (s) {
 
   assert(
@@ -24,7 +24,7 @@ module.exports = function sha1FromFile (s) {
 }
 
 // (b: buffer|string) => String
-// @throws TypeError
+// @throws AssertionError
 module.exports.sync = function sha1FromFileSync (b) {
 
   assert(
