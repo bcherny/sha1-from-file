@@ -10,18 +10,24 @@ generate a short sha1 hash from a file's contents
 ## install
 
 ```sh
-npm i sha1-from-file
+npm install sha1-from-file --save
 ```
 
 ## usage
 
 ```js
 import { createReadStream, readFileSync } from 'fs'
-import hash from 'sha1-from-file'
+import hash, { sync } from 'sha1-from-file'
 
-// async
+// async (ES6-)
 hash(createReadStream('./file.txt')).then(myHash => ...)
 
-// sync
-const myHash = hash.sync(readFileSync('./file.txt')) // "1bhh17h"
+// async (ES7)
+const myHash = await hash(createReadStream('./file.txt'))
+
+// sync (buffer)
+const myHash = sync(new Buffer(...))
+
+// sync (string)
+const myHash = sync(readFileSync('./file.txt', 'utf-8')) // "1bhh17h"
 ```
