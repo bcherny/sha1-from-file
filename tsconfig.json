@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["es2015"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "preserveConstEnums": true,
+    "outDir": ".",
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "target": "es5",
+    "types": [
+      "node"
+    ]
+  },
+  "files": [
+    "index.ts",
+    "test.ts"
+  ]
+}

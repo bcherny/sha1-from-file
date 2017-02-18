@@ -1,11 +1,14 @@
 {
   "name": "sha1-from-file",
-  "version": "1.0.2",
-  "description": "generate a short sha1 hash from a file's contents",
+  "version": "2.0.0",
+  "description": "Generate a short sha1 hash from a file's contents",
   "main": "index.js",
+  "typings": "index.d.ts",
   "scripts": {
-    "test": "nodeunit test.js",
-    "tdd": "nodemon *.js --exec nodeunit test.js"
+    "build": "rm ./*.d.ts; tsc",
+    "lint": "tslint index.ts",
+    "test": "npm run build && npm run lint && ava test.js",
+    "tdd": "nodemon *.js --exec ava test.js"
   },
   "repository": {
     "type": "git",
@@ -33,7 +36,12 @@
     "node": ">= 4.0.0"
   },
   "devDependencies": {
-    "nodemon": "^1.8.0",
-    "nodeunit": "^0.9.1"
+    "ava": "^0.18.2",
+    "nodemon": "^1.11.0",
+    "tslint": "^4.4.2",
+    "typescript": "^2.1.6"
+  },
+  "dependencies": {
+    "@types/node": "^7.0.5"
   }
 }
